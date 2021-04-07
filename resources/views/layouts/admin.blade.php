@@ -199,7 +199,7 @@
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
-                                الاعدادات
+                                test
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -207,13 +207,13 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>تغير اعدادات الدخول</p>
+                                    <p>t1</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>تغير اعدادات الحساب</p>
+                                    <p>t2</p>
                                 </a>
                             </li>
                         </ul>
@@ -231,7 +231,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-copy"></i>
                             <p>
-                               اقساط
+                               te
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -239,13 +239,13 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>قسط جديد</p>
+                                    <p>t3</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>اقساطي</p>
+                                    <p>t4</p>
                                 </a>
                             </li>
                         </ul>
@@ -254,7 +254,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-table"></i>
                             <p>
-                                جمعيات
+                                ds
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -262,13 +262,13 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> جمعيه جديده</p>
+                                    <p>t5</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>جمعياتى</p>
+                                    <p>t6</p>
                                 </a>
                             </li>
                         </ul>
