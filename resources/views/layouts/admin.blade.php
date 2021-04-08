@@ -166,10 +166,12 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    <img
+                        src="{{Auth::user()->photo ? Auth::user()->photo->file :'http://placehold.it/400x400'}}"
+                        class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">Alexander Pierce</a>
+                    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                 </div>
             </div>
 
@@ -194,11 +196,7 @@
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
-<<<<<<< HEAD
-                                test
-=======
-                                Dashboard
->>>>>>> parent of 9433493... Edit Admin Panel
+                                الاعدادات
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -206,27 +204,13 @@
                             <li class="nav-item">
                                 <a href="./index.html" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
-                                    <p>t1</p>
-=======
-                                    <p>Dashboard v1</p>
->>>>>>> parent of 9433493... Edit Admin Panel
+                                    <p>اعدادات الدخول</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="./index2.html" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
-                                    <p>t2</p>
-=======
-                                    <p>Dashboard v2</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./index3.html" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v3</p>
->>>>>>> parent of 9433493... Edit Admin Panel
+                                    <p>الاعدادات الشخصيه</p>
                                 </a>
                             </li>
                         </ul>
@@ -244,10 +228,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-copy"></i>
                             <p>
-<<<<<<< HEAD
                                te
-=======
-                                Layout Options
                                 <i class="fas fa-angle-left right"></i>
                                 <span class="badge badge-info right">6</span>
                             </p>
@@ -592,7 +573,6 @@
                             <i class="nav-icon far fa-plus-square"></i>
                             <p>
                                 Extras
->>>>>>> parent of 9433493... Edit Admin Panel
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -600,14 +580,11 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
                                     <p>t3</p>
-=======
                                     <p>
                                         Login & Register v1
                                         <i class="fas fa-angle-left right"></i>
                                     </p>
->>>>>>> parent of 9433493... Edit Admin Panel
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
@@ -639,9 +616,7 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
                                     <p>t4</p>
-=======
                                     <p>
                                         Login & Register v2
                                         <i class="fas fa-angle-left right"></i>
@@ -720,7 +695,6 @@
                                 <a href="starter.html" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Starter Page</p>
->>>>>>> parent of 9433493... Edit Admin Panel
                                 </a>
                             </li>
                         </ul>
@@ -729,11 +703,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-search"></i>
                             <p>
-<<<<<<< HEAD
                                 ds
-=======
-                                Search
->>>>>>> parent of 9433493... Edit Admin Panel
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -790,14 +760,13 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
+
                                     <p>t5</p>
-=======
+
                                     <p>
                                         Level 2
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
->>>>>>> parent of 9433493... Edit Admin Panel
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
@@ -823,11 +792,8 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-<<<<<<< HEAD
                                     <p>t6</p>
-=======
                                     <p>Level 2</p>
->>>>>>> parent of 9433493... Edit Admin Panel
                                 </a>
                             </li>
                         </ul>
@@ -875,7 +841,15 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item">
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
                             <li class="breadcrumb-item active">Dashboard v3</li>
                         </ol>
                     </div><!-- /.col -->
