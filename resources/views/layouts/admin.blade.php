@@ -166,12 +166,10 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img
-                        src="{{Auth::user()->photo ? Auth::user()->photo->file :'http://placehold.it/400x400'}}"
-                        class="img-circle elevation-2" alt="User Image">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                    <a href="#" class="d-block">Alexander Pierce</a>
                 </div>
             </div>
 
@@ -276,7 +274,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Welcom Mr/Ms: {{ Auth::user()->name }}</h1>
+                        <h1 class="m-0">Dashboard v3</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
