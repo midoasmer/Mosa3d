@@ -287,7 +287,6 @@
                                     {{ csrf_field() }}
                                 </form>
                             </li>
-                            <li class="breadcrumb-item active">Dashboard v3</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
